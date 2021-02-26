@@ -6,10 +6,14 @@ class Words
       "These words are anagrams!"
     elsif sorted_1.each_char.none?(/[aeiou]/) || sorted_2.each_char.none?(/[aeiou]/)
       "You need to input actual words!"
-    elsif sorted_1.each_char.none?(/[sorted_2]/)
-      "These words have no letter matches and are antigrams."
     else
       "These words are NOT anagrams."
+    end
+  end
+  def antigram(word1, word2)
+    if word1.each_char.
+      "These words have no letter matches and are antigrams."
+      binding.pry
     end
   end
 end
