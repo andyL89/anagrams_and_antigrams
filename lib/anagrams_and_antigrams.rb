@@ -9,6 +9,12 @@ class Words
     end
   end
   def vowel_check(word)
-    chars = 
+    is_word = false
+    if word.each_char.any?(/[aeiou]/)
+      is_word = true
+    else
+      is_word = false
+    end
+    is_word
   end
 end
