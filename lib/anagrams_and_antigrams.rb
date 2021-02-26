@@ -7,8 +7,8 @@ class Words
     else
       "These words are NOT anagrams."
     end
-    def vowel_checker(str)
-      vowels = %w(a e i o u y)
-    end
+  end
+  def vowel_check(word)
+    chars = 
   end
 end
