@@ -1,7 +1,7 @@
 class Words
-  def anagram(word1, word2)
-    sorted_1 = word1.downcase.chars.sort.join
-    sorted_2 = word2.downcase.chars.sort.join
+  def anagram(str1, str2)
+    sorted_1 = str1.downcase.chars.sort.join
+    sorted_2 = str2.downcase.chars.sort.join
     if sorted_1.eql?(sorted_2)
       "These words are anagrams!"
     elsif sorted_1.each_char.none?(/[aeiou]/) || sorted_2.each_char.none?(/[aeiou]/)
@@ -10,6 +10,13 @@ class Words
       "These words have no letter matches and are antigrams."
     else
       "These words are NOT anagrams."
+    end
+  end
+  def phrase(str1, str2)
+    sorted_1 = str1.delete("^a-zA-Z").downcase.chars.sort.join
+    sorted_2 = str1.delete("^a-zA-Z").downcase.chars.sort.join
+    if sorted_1.eql?(sorted_2)
+      "These phrases are anagrams!"
     end
   end
 end
@@ -21,12 +28,12 @@ end
 #   end
 # end
 
-# def vowel_check(word)
-#   is_word = false
-#   if word.each_char.any?(/[aeiou]/)
-#     is_word = true
-#   else
-#     is_word = false
-#   end
-#   is_word
-# end
+def vowel_check(word)
+  is_word = false
+  if word.each_char.any?(/[aeiou]/)
+    is_word = true
+  else
+    is_word = false
+  end
+  is_word
+end
