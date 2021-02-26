@@ -18,7 +18,7 @@ describe('Words#anagram') do
   describe('Words#antigram') do
     it('Checks to see if inputted words are antigrams (no letters match)') do
       @words = Words.new()
-      expect(@words.antigram('liona', 'zebra')).to(eq("These words have no letter matches and are antigrams."))
+      expect(@words.antigram('lion', 'zebra')).to(eq("These words have no letter matches and are antigrams."))
     end
   end
 end

@@ -11,9 +11,10 @@ class Words
     end
   end
   def antigram(word1, word2)
-    if word1.each_char.
+    if word1.delete(word2) == word1
       "These words have no letter matches and are antigrams."
-      binding.pry
+    else
+      "These words share at least one letter."
     end
   end
 end
