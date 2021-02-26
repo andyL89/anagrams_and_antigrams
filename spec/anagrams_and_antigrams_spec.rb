@@ -14,7 +14,7 @@ describe('Words#anagram') do
   describe('Words#vowel_check') do
     it('Checks to see if inputted words contain vowels') do
       @words = Words.new()
-      expect(@words.vowel_check('ctnd')).to(eq(true))
+      expect(@words.vowel_check('auctioned')).to(eq(true))
     end
   end
 end
