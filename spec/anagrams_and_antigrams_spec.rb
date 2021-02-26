@@ -15,4 +15,8 @@ describe('Words#anagram') do
     @words = Words.new()
     expect(@words.anagram('ctnd', 'cautioned')).to(eq("You need to input actual words!"))
   end
+  it('Checks to see if inputted words are antigrams (no letters match)') do
+    @words = Words.new()
+    expect(@words.anagram('lion', 'zebra')).to(eq("These words have no letter matches and are antigrams."))
+  end
 end
