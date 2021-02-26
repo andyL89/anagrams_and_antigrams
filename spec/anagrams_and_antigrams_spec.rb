@@ -11,10 +11,8 @@ describe('Words#anagram') do
     @words = Words.new()
     expect(@words.anagram('Case', 'Aces')).to(eq("These words are anagrams!"))
   end
-  describe('Words#vowel_check') do
-    it('Checks to see if inputted words contain vowels') do
-      @words = Words.new()
-      expect(@words.vowel_check('auctioned')).to(eq(true))
-    end
+  it('Checks to see if inputted words contain vowels') do
+    @words = Words.new()
+    expect(@words.anagram('ctnd', 'cautioned')).to(eq("You need to input actual words!"))
   end
 end
