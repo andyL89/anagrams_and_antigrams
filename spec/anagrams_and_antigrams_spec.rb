@@ -22,7 +22,7 @@ describe('Words#anagram') do
   describe('Words#phrase') do
     it('Checks to see if inputted phrases are anagrams or antigrams') do
       @words = Words.new()
-      expect(@words.phrase('xxkgh', 'kghxx')).to(eq("These phrases are anagrams!"))
+      expect(@words.phrase('Astronomer', 'Moon Starer')).to(eq("These phrases are anagrams!"))
     end
   end
 end
