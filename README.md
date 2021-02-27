@@ -5,7 +5,7 @@
 * * *
 
 ## Description
-This is an application for learning TDD with ruby while attending Epicodus coding school.
+This is an application for finding whether or not inputted words and phrases are anagrams. If the words/ phrases have the same exact letters(case-insensitive; not counting spaces or special characters) they are anagrams. If the words/ phrases contain zero matching letters, they are 'antigrams'.
 * * *
 
 ## Technologies used
