@@ -13,7 +13,7 @@ describe('Words#anagram') do
   end
   it('Checks to see if inputted words contain vowels') do
     @words = Words.new()
-    expect(@words.anagram('ctnd', 'cautioned')).to(eq("You need to input actual words!"))
+    expect(@words.anagram('ctnd', 'please use caution')).to(eq("You need to input actual words!"))
   end
   it('Checks to see if inputted words are antigrams (no letters match)') do
     @words = Words.new()
@@ -22,7 +22,7 @@ describe('Words#anagram') do
   describe('Words#phrase') do
     it('Checks to see if inputted phrases are anagrams or antigrams') do
       @words = Words.new()
-      expect(@words.phrase('Astronomer', 'Moon Starer')).to(eq("These phrases are anagrams!"))
+      expect(@words.phrase('Astronomer', 'Moon Star')).to(eq("These phrases are anagrams!"))
     end
   end
 end
