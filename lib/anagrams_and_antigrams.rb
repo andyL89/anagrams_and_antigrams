@@ -5,14 +5,14 @@ class Anagram
   end
 
   def analyze(str_1, str_2)
-    each_word_1 = str_1.split(' ')
-    each_word_2 = str_2.split(' ')
+    each_word_1 = str_1.delete("^\sa-zA-Z").downcase.split(' ')
+    each_word_2 = str_2.delete("^\sa-zA-Z").downcase.split(' ')
     str_1_reversed = str_1.delete("^a-zA-Z").downcase.chars.join.reverse
     str_2_joined = str_2.delete("^a-zA-Z").downcase.chars.join
     sorted_1 = str_1.delete("^a-zA-Z").downcase.chars.sort.join
     sorted_2 = str_2.delete("^a-zA-Z").downcase.chars.sort.join
 
-    if each_word_1.each.none?(/[aeiou]/) || each_word_2.each.none?(/[aeiou]/)
+    if !each_word_1.each.all?(/([aeiou])/) || !each_word_2.each.all?(/([aeiou])/)
       $result = "You need to input actual words!"
     elsif str_1_reversed.eql?(str_2_joined)
       $result = "These words are spelled the same forwards and backwards, that's a palindrome!"

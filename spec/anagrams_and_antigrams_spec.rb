@@ -21,7 +21,7 @@ describe('Anagram#analyze') do
   end
   it('Checks to see if inputted phrases are anagrams or antigrams') do
     input = Anagram.new()
-    expect(input.analyze('actual words', 'hjkgh Strr')).to(eq("You need to input actual words!"))
+    expect(input.analyze('actual words', 'hjkgh Star')).to(eq("You need to input actual words!"))
   end
   it('Checks to see if words/phrases are palindromes') do
     input = Anagram.new()
