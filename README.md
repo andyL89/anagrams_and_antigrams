@@ -26,13 +26,13 @@ This is an application for finding whether or not inputted words and phrases are
 
 - Copy the HTTPS code by clicking the clipboard next to the link.
 
-- Within your Bash terminal navigate to your desired location by using cd fallowed by your desired directory.
+- Within your Bash terminal navigate to your desired location by using cd followed by your desired directory.
 
 ```bash
  cd Desktop
 ```
 
-- Once you have chosen your desired directory use the command.
+- Once you have chosen your desired directory use the command:
 ```bash
 git clone https://github.com/andyL89/anagrams_and_antigrams.git
 ```
@@ -67,10 +67,16 @@ git clone https://github.com/andyL89/anagrams_and_antigrams.git
 </div>
 
 
-* Then after the process is completed use the command.
+* After the process is completed use the command:
 
 ``` bash
 code .
+```
+
+* Then to use the app in the terminal, use the command:
+
+``` bash
+ruby script.rb
 ```
 
 
