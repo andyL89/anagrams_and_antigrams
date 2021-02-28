@@ -7,15 +7,11 @@ class Anagram
   def analyze(str_1, str_2)
     each_word_1 = str_1.downcase.delete("^\sa-z").split(' ')
     each_word_2 = str_2.downcase.delete("^\sa-z").split(' ')
-    str_1_reversed = str_1.downcase.delete("^a-z").chars.join.reverse
-    str_2_joined = str_2.downcase.delete("^a-z").chars.join
     sorted_1 = str_1.downcase.delete("^a-z").chars.sort.join
     sorted_2 = str_2.downcase.delete("^a-z").chars.sort.join
 
     if !each_word_1.each.all?(/([aeiou])/) || !each_word_2.each.all?(/([aeiou])/)
       $result = "You need to input actual words!"
-    elsif str_1_reversed.eql?(str_2_joined)
-      $result = "These words are spelled the same forwards and backwards, that's a palindrome!"
     elsif sorted_1.eql?(sorted_2)
       $result = "All letters match, so that's an anagram!"
     elsif sorted_1.delete(sorted_2) == sorted_1

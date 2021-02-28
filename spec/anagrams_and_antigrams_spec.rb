@@ -23,8 +23,4 @@ describe('Anagram#analyze') do
     input = Anagram.new()
     expect(input.analyze('actual words', 'hjkgh Star')).to(eq("You need to input actual words!"))
   end
-  it('Checks to see if words/phrases are palindromes') do
-    input = Anagram.new()
-    expect(input.analyze("Go hang a salami", "I'm a lasagna hog.")).to(eq("These words are spelled the same forwards and backwards, that's a palindrome!"))
-  end
 end
