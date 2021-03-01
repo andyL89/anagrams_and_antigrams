@@ -67,7 +67,7 @@ git clone https://github.com/andyL89/anagrams_and_antigrams.git
 </div>
 
 
-* After the process is completed use the command:
+* Navigate to the chosen directory and use the command:
 
 ``` bash
 code .
