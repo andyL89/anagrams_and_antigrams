@@ -73,6 +73,12 @@ git clone https://github.com/andyL89/anagrams_and_antigrams.git
 code .
 ```
 
+* Load the Gems with the command:
+
+``` bash
+bundle
+```
+
 * Then to use the app in the terminal, use the command:
 
 ``` bash
