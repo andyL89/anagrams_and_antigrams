@@ -67,19 +67,25 @@ git clone https://github.com/andyL89/anagrams_and_antigrams.git
 </div>
 
 
-* Navigate to the chosen directory and use the command:
+* Within the chosen directory, use the command:
 
 ``` bash
 code .
 ```
 
-* Load the Gems with the command:
+* Download Gem bundler with the command:
+
+``` bash
+gem install bundler
+```
+
+* Install dependencies with the command:
 
 ``` bash
 bundle
 ```
 
-* Then to use the app in the terminal, use the command:
+* Then to run the program in the terminal, use the command:
 
 ``` bash
 ruby script.rb
